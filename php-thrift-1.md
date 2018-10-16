@@ -49,17 +49,26 @@ TStringFuncFactory，字符串处理工厂类
 # 服务端创建的步骤
 
 首先初始化服务提供者handler
+
 然后利用该handler初始化自动生成的processor
+
 初始化数据传输方式transport
+
 利用该传输方式初始化数据传输格式protocol
+
 开始服务
+
 
 # 客户端调用的步骤
 
 初始化数据传输方式transport，与服务端对应
+
 利用该传输方式初始化数据传输格式protocol，与服务端对应
+
 实例化自动生成的Client对象
+
 开始调用
+
 
 # Thrift作为一个跨语言的服务框架
 
