@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c18943aa-ef6c-405b-89d5-b59653131727" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php-thrift-1.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php-thrift-1.md" afterPath="$PROJECT_DIR$/php-thrift-1.md" />
     </list>
     <ignored path="mydoc.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -48,8 +47,8 @@
           </provider>
           <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
             <state split_layout="FIRST">
-              <first_editor vertical-scroll-proportion="0.45762712">
-                <caret line="64" column="0" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
+              <first_editor vertical-scroll-proportion="0.3559322">
+                <caret line="63" column="19" selection-start-line="63" selection-start-column="19" selection-end-line="63" selection-end-column="19" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -202,8 +201,8 @@
       </provider>
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="FIRST">
-          <first_editor vertical-scroll-proportion="0.45762712">
-            <caret line="64" column="0" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
+          <first_editor vertical-scroll-proportion="0.3559322">
+            <caret line="63" column="19" selection-start-line="63" selection-start-column="19" selection-end-line="63" selection-end-column="19" />
             <folding />
           </first_editor>
           <second_editor />

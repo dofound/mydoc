@@ -1,11 +1,11 @@
-#Apache Thrift#
+#Apache Thrift
 
 Apache Thrift是一个跨语言的服务部署框架，通过一个中间语言(IDL, 接口定义语言)来定义RPC的接口和数据类型，然后通过一个编译器生成不同语言的代码（支持C++，Java，Python，PHP, GO，Javascript，Ruby，Erlang，Perl， Haskell， C#等）,并由生成的代码负责RPC协议层和传输层的实现。
 
 Thrift的PHP类库位于thrift/lib/php/lib/Thrift目录下面，Thrift对于数据传输格式、数据传输方式，服务器模型均做了定义，方便自行扩展。
 
 
-#数据传输格式（protocol）#
+#数据传输格式（protocol）
 
 数据传输格式（protocol）是定义的了传输内容，对Thrift Type的打包解包，包括
 
@@ -14,7 +14,7 @@ TCompactProtocol，压缩格式
 TJSONProtocol，JSON格式
 TMultiplexedProtocol，利用前三种数据格式与支持多路复用协议的服务端（同时提供多个服务，TMultiplexedProcessor）交互
 
-#数据传输方式#
+#数据传输方式
 
 数据传输方式（transport），定义了如何发送（write）和接收（read）数据，包括
 
@@ -29,7 +29,7 @@ TNullTransport，关闭数据传输
 TSocketPool在TSocket基础支持多个服务端管理（需要APC支持），自动剔除无效的服务器
 TNonblockingSocket，非官方实现非阻塞socket
 
-#服务模型#
+#服务模型
 
 服务模型，定义了当PHP作为服务端如何监听端口处理请求
 
@@ -37,7 +37,7 @@ TForkingServer，采用子进程处理请求
 TSimpleServer，在TServerSocket基础上处理请求
 TNonblockingServer，基于libevent的非官方实现非阻塞服务端，与TNonblockingServerSocket，TNonblockingSocket配合使用
 
-#一些工厂#
+#一些工厂
 
 另外还定义了一些工厂，以便在Server模式下对数据传输格式和传输方式进行绑定
 
@@ -46,7 +46,7 @@ TTransportFactory，数据传输方式工厂类，对transport的工厂化生产
 TStringFuncFactory，字符串处理工厂类
 
 
-#服务端创建的步骤#
+#服务端创建的步骤
 
 首先初始化服务提供者handler
 然后利用该handler初始化自动生成的processor
@@ -54,14 +54,14 @@ TStringFuncFactory，字符串处理工厂类
 利用该传输方式初始化数据传输格式protocol
 开始服务
 
-#客户端调用的步骤#
+#客户端调用的步骤
 
 初始化数据传输方式transport，与服务端对应
 利用该传输方式初始化数据传输格式protocol，与服务端对应
 实例化自动生成的Client对象
 开始调用
 
-#Thrift作为一个跨语言的服务框架#
+#Thrift作为一个跨语言的服务框架
 
 其他文件便是异常，字符串处理，自动加载器的定义等等。
 
